@@ -6,3 +6,4 @@ October 7th, 2022
 */
 
 export const Secret = "MySecret";
+export const MongoURI = "mongodb://localhost/media";       //Mongo connection URL
