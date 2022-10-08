@@ -1,0 +1,30 @@
+{
+  "name": "y",
+  "version": "1.0.0",
+  "description": "Assignment1",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Sheila Donnelly",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "connect": "^3.7.0",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-session": "^1.17.3",
+    "morgan": "^1.10.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LookyLuCU/COMP229-Week3_Update"
+  },
+  "bugs": {
+    "url": "https://github.com/LookyLuCU/COMP229-Week3_Update/issues"
+  },
+  "homepage": "https://github.com/LookyLuCU/COMP229-Week3_Update#readme"
+}
