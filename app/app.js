@@ -25,6 +25,7 @@ import { MongoURI, Secret } from "../config/config.js";
 
 //IMPORT ROUTER
 import indexRouter from './routes/index.js';
+import movieRouter from './routes/movies.router.server.js';
 
 //instantiate app server
 const app = express();
@@ -54,6 +55,7 @@ app.use(session({
 
 //Use Routes - to link to express application
 app.use('/', indexRouter);
+app.use('/', movieRouter);
 
 export default app;
 

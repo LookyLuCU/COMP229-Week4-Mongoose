@@ -1,12 +1,11 @@
 {
   "name": "y",
   "version": "1.0.0",
-  "description": "Assignment1",
+  "description": "week4-mongoose",
   "main": "server.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Sheila Donnelly",
   "license": "ISC",
@@ -19,13 +18,5 @@
     "express-session": "^1.17.3",
     "mongoose": "^6.6.5",
     "morgan": "^1.10.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LookyLuCU/COMP229-Week3_Update"
-  },
-  "bugs": {
-    "url": "https://github.com/LookyLuCU/COMP229-Week3_Update/issues"
-  },
-  "homepage": "https://github.com/LookyLuCU/COMP229-Week3_Update#readme"
+  }
 }
