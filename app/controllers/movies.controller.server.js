@@ -10,3 +10,7 @@ export function DisplayMoviesList(req, res, next){
         res.render('index', {title: 'Movie List', page: 'movies/list', movies: moviesCollection});
     })
 }
+
+export function DisplayMoviesAddPage(req, res, next){
+    res.render('index', {title: 'Add Movie', page: 'movies/edit', movie: {} });
+}

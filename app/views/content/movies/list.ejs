@@ -1,9 +1,10 @@
 <div class="container">
     <h1>Movie List</h1>
-
+    <a href="/movie-add" class="btn btn-primary" role="button">
+        <i class="fas fa-plus-circle"></i> Add a Movie</a>
     <div class="row">
         <div class="col">
-
+    
             <table class="table table-striped table-bordered table-hover">
                 <thead class="table-dark">
                     <tr>
@@ -17,21 +18,30 @@
                         <th></th>
                     </tr>
                 </thead>
-                <tbody id="movielist">
-                    <!--Repeatable Rows - repeats for each movie in list-->
-                    <% for(let count=0; count movies.length; count++){ %>
-                    <tr>
-                        <th scope="row" class="text-center"><%= count + 1 %></th>
-                        <td><%= movies[count].name %></td>
-                        <td><%= movies[count].year %></td>
-                        <td><%= movies[count].director %></td>
-                        <td><%= movies[count].genre %></td>
-                        <td><%= movies[count].runtime %></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
+                <tbody id="movieList">
+                    <!-- Repeatable Rows -->
+                    <% for(let count = 0; count < movies.length; count++) { %>
+                        <tr>
+                            <th scope="row" class="text-center"><%= count + 1 %></th>
+                            <td><%= movies[count].name %></td>
+                            <td><%= movies[count].year %></td>
+                            <td><%= movies[count].director %></td>
+                            <td><%= movies[count].genre %></td>
+                            <td><%= movies[count].runtime %></td>
+                            
+                            <td class="text-center col-1">
+                                <a href="/movie-edit/<%= movies[count]._id %>"
+                                    class="btn btn-primary btn-sm">
+                                    <i class="fas fa-pencil-alt"></i> Edit</a>
+                            </td>
+                            
+                            <td class="text-center col-1">
+                                <a href="/movie-delete/<%= movies[count]._id %>"
+                                    class="btn btn-danger btn-sm">
+                                    <i class="fas fa-trash-alt"></i> Delete</a>
+                            </td>
+                        </tr>
                     <% } %>
-
                 </tbody>
             </table>
         </div>
